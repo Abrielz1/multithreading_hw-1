@@ -25,7 +25,7 @@ public class Consumer implements Runnable {
         ServerSocket serverSocket;
 
           try {
-                serverSocket = new ServerSocket(PORT);
+                serverSocket = new ServerSocket(port);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }

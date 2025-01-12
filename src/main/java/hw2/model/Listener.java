@@ -24,7 +24,7 @@ public class Listener implements Runnable  {
 
     public void runner(int port) {
 
-        try (Socket clientSocket = new Socket(HOSTNAME, PORT);
+        try (Socket clientSocket = new Socket(HOSTNAME, port);
              InputStreamReader isr = new InputStreamReader(clientSocket.getInputStream());
              BufferedReader in = new BufferedReader(isr);
              PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true)
